@@ -1,0 +1,51 @@
+:root{
+    --containerWidth: 1000px;
+    --containerHeight: 400px;
+    --listWidth: calc(var(--containerWidth)/2);
+
+}
+ body{
+    background-color: #f0e68c;
+ }
+
+.container{
+    
+    height: var(--containerHeight);
+    width: var(--containerWidth);
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.list{
+    
+    height: var(--containerHeight);
+    width: var(--listWidth);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title{
+    width: calc(var(--listWidth)-10);
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+#info{
+    display: inline-block;
+    border: solid black 1px; 
+    height: 25px; 
+    width: 25px; 
+    margin-left: 35px; 
+    background-image: url("infoIcon.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border-radius: 50px;
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO N CON</title>
+    <link rel="stylesheet" type="text/css" href="procon.css" media="screen" />
+</head>
+<body>
+
+    
+    
+    <input placeholder="List Title" 
+        style="margin-left: 10%; margin-bottom: 7px; background-color: #f0e68c; 
+        border: #f0e68c; text-align: center; outline: none; width: 1000px; font-size: 50px;">
+    
+    <span id="info"></span>
+
+    <div class="container">
+
+
+        <div class="list" id="pro">
+            <div class="title" id="proTitle" style="color: rgb(42, 161, 42); border: solid rgb(42, 161, 42) 5px;">PROS</div>
+
+            <div class="titles" style="display: flex; justify-content: space-between;">
+                <div class="colTitles" style="width: 10px; padding-left: 2px;">#</div>
+                <div class="colTitles" style="flex-grow: 1.1; padding-left: 5px; text-align: center;">Argument</div>
+                <div class="colTitles" style="width: 50px; text-align: center; padding-right: 5px;">Weight</div>
+                <!-- <div class="colTitles" style="width: 80px;"></div> -->
+            </div>
+
+            <div style="order: 2; display: flex;">
+                <div class="colTitles" style="width: 15px; padding-left: 2px;"></div>
+                <button onclick="newPro()" style="flex-grow: 2;">Add New Pro</button>
+                <button onclick="deletePro()">Delete Last Pro</button>
+            </div>
+            
+
+        </div>
+
+        
+
+
+
+        <div class="list" id ="con">
+            <div class="title" id="conTitle" style="color: rgba(219, 48, 48); border: solid rgba(219, 48, 48) 5px;">CONS</div>
+
+            <div class="titles" style="display: flex; justify-content: space-between;">
+                <div class="colTitles" style="width: 10px; padding-left: 2px;">#</div>
+                <div class="colTitles" style="flex-grow: 1.1; padding-left: 5px; text-align: center;">Argument</div>
+                <div class="colTitles" style="width: 50px; text-align: center; padding-right: 5px;">Weight</div>
+                <!-- <div class="colTitles" style="width: 80px;"></div> -->
+            </div>
+
+            <div style="order: 2; display: flex;">
+                <div class="colTitles" style="width: 15px; padding-left: 2px;"></div>
+                <button onclick="newCon()" style="flex-grow: 2;">Add New Con</button>
+                <button onclick="deleteCon()">Delete Last Con</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <button onclick="calculateFate()">Calculate your fate</button>
+
+
+    <script type="text/javascript" src="procon.js"></script>
+</body>
+</html>
